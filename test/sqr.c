@@ -1,6 +1,6 @@
 #include "sqr.h"
 #include <math.h>
-
+//
 int sqr(double a,  double b,  double c, double *i, double *o)
 {
 	if ((a == 0) || ((a == 0) && (b == 0)) || ((a == 0) && (b == 0) && (c == 0)))
