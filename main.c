@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "sqr.h"
-
+//lol
 int main()
 {
     double a, b, c;
