@@ -8,13 +8,13 @@ test: test/maintest.o src/sqr.o src/sqrtest.o
 	./testik
 
 test/maintest.o: test/maintest.c
-	gcc test/maintest.c -c -o test/maintest.o -I"/home/STUDENTS/2015/ip514s05/quad/thirdparty"
+	gcc test/maintest.c -c -o test/maintest.o -Ithirdparty
 
 test/main.o: test/main.c
-	gcc test/main.c -c 
+	gcc test/main.c -c -o test/main.o -Isrc
 
 src/sqr.o: src/sqr.c
 	gcc src/sqr.c -c -o src/sqr.o
 
 src/sqrtest.o: src/sqrtest.c
-	gcc src/sqrtest.c -c -o src/sqrtest.o -I"/home/STUDENTS/2015/ip514s05/quad/thirdparty"
+	gcc src/sqrtest.c -c -o src/sqrtest.o -Ithirdparty
