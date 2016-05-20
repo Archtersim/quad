@@ -1,7 +1,8 @@
 main : maintest.o sqr.o sqrtest.o
 	gcc maintest.o sqr.o sqrtest.o -o testik -lm
-main2: main.o sqr.o
+main2: main.o sqr.o 
 	gcc main.o sqr.o -o main -lm
+	./testik
 
 maintest.o : maintest.c
 	gcc maintest.c -c
